@@ -25,6 +25,8 @@ namespace WebBanHangOnline.Models
         {
         }
 
+        public object Categories { get; internal set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
