@@ -175,6 +175,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\EF\Ads.cs" />
+    <Compile Include="Models\EF\Category.cs" />
+    <Compile Include="Models\EF\Contact.cs" />
+    <Compile Include="Models\EF\News.cs" />
+    <Compile Include="Models\EF\Order.cs" />
+    <Compile Include="Models\EF\OrderDetail.cs" />
+    <Compile Include="Models\EF\Post.cs" />
+    <Compile Include="Models\EF\ProductCategory.cs" />
+    <Compile Include="Models\EF\ProductImgs.cs" />
+    <Compile Include="Models\EF\Products.cs" />
+    <Compile Include="Models\EF\Subcribe.cs" />
+    <Compile Include="Models\EF\SystemSetting.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
