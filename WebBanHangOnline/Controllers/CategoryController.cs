@@ -43,33 +43,26 @@ namespace WebBanHangOnline.Areas.Admin.Controllers
 
         public ActionResult Edit(int id)
         {
-            var item = db.Categories.Find(id);
-
+            ViewBag.ProductCategory = new SelectList(db.ProductCategories.ToList(), "Id", "Title");
+            var item = db.Products.Find(id);
             return View(item);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Category model)
+        public ActionResult Edit(Products model)
         {
             if (ModelState.IsValid)
             {
-                db.Categories.Attach(model);
+                db.Products.Attach(model);
                 model.ModifiedDate = DateTime.Now;
                 model.Alias = WebBanHangOnline.Models.Common.Filter.FilterChar(model.Title);
-                db.Entry(model).Property(x => x.Title).IsModified = true;
-                db.Entry(model).Property(x => x.Description).IsModified = true;
-                db.Entry(model).Property(x => x.Position).IsModified = true;
-                db.Entry(model).Property(x => x.Alias).IsModified = true;
-                db.Entry(model).Property(x => x.SeoDescription).IsModified = true;
-                db.Entry(model).Property(x => x.SeoKeywords).IsModified = true;
-                db.Entry(model).Property(x => x.SeoTitle).IsModified = true;
-                db.Entry(model).Property(x => x.ModifiedDate).IsModified = true;
-                db.Entry(model).Property(x => x.ModyfiedBy).IsModified = true;
+                db.Entry(model).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(model);
         }
+
 
 
         [HttpPost]
