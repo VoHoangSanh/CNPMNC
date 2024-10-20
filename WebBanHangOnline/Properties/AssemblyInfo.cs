@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("HP Inc.")]
 [assembly: AssemblyProduct("WebBanHangOnline")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2024")]
+[assembly: AssemblyCopyright("Copyright © HP Inc. 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("29f36492-75d0-4b36-aa5f-097559ee2ed8")]
+[assembly: Guid("da5be284-1415-49b6-908a-6d0517abb73a")]
 
 // Version information for an assembly consists of the following four values:
 //
