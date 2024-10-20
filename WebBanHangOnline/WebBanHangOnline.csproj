@@ -198,10 +198,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409292048435_DatabaseNew.cs" />
-    <Compile Include="Migrations\202409292048435_DatabaseNew.Designer.cs">
-      <DependentUpon>202409292048435_DatabaseNew.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
@@ -228,10 +224,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Assets\images\imgs\agv_dealoftheweek.png" />
+    <Content Include="Content\Assets\images\imgs\logo.png" />
     <Content Include="Content\Assets\images\imgs\pista-gp-rr-ece-dot-limited-edition-anno-75_28_11zon.png" />
-    <Content Include="Content\Assets\images\imgs\slider1.jpg" />
-    <Content Include="Content\Assets\images\imgs\slider2.jpg" />
-    <Content Include="Content\Assets\images\imgs\slider3.jpg" />
+    <Content Include="Content\Assets\images\imgs\slider1.png" />
+    <Content Include="Content\Assets\images\imgs\slider2.png" />
+    <Content Include="Content\Assets\images\imgs\slider3.png" />
     <Content Include="Content\Assets\js\categories_custom.js" />
     <Content Include="Content\Assets\js\contact_custom.js" />
     <Content Include="Content\Assets\js\custom.js" />
@@ -3489,11 +3486,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202409292048435_DatabaseNew.resx">
-      <DependentUpon>202409292048435_DatabaseNew.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
